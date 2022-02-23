@@ -16,6 +16,6 @@ jobs:
         with:
           message: |
             :)
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.POGGER }}
           repo-token-user-login: 'github-actions[bot]'
           allow-repeats: false
