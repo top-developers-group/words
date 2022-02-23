@@ -9,7 +9,7 @@ jobs:
       pull-requests: write
     steps:
       - name: lol
-        uses: github-actions-up-and-running/pr-comment@v1.0.0
+        uses: github-actions-up-and-running/pr-comment@v1.0.1
         with:
-          repo-token: ${{ secrets.SYNPAT }}
-          message: Nice PR!👍
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          message: ":)"
