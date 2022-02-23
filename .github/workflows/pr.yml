@@ -6,7 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: lol
-        uses: github-actions-up-and-running/pr-comment@v1.0.1
+        uses: NejcZdovc/comment-pr@v1
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          message: :)
+          message: ":)"
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
