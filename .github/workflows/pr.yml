@@ -2,8 +2,11 @@ name: hi
 on: [pull_request]
 
 jobs:
-  build:
+  w:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: lol
         uses: NejcZdovc/comment-pr@v1
