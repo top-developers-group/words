@@ -1,0 +1,7 @@
+# in .github/ranger.yaml
+default:
+  comment:
+    message: 'hi :)'
+
+labels:
+  'this is a pr': comment
