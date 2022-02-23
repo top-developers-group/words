@@ -10,6 +10,6 @@ jobs:
         with:
           message: |
             :)
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.SYNPAT }}
           repo-token-user-login: 'github-actions[bot]'
           allow-repeats: false
