@@ -1,15 +1,15 @@
 name: hi
-on: [pull_request]
+on:
+  pull_request:
 
 jobs:
   w:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
     steps:
-      - name: lol
-        uses: github-actions-up-and-running/pr-comment@v1.0.1
+      - uses: mshick/add-pr-comment@v1
         with:
+          message: |
+            :)
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          message: ":)"
+          repo-token-user-login: 'github-actions[bot]'
+          allow-repeats: false
