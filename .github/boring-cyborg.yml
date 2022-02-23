@@ -1,3 +1,7 @@
+labelPRBasedOnFilePath:
+  this-is-a-pr:
+    - ./**/*
+
 firstPRWelcomeComment: >
   :)
 
