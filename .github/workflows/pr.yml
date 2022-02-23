@@ -4,11 +4,13 @@ on:
 
 jobs:
   w:
-  
     runs-on: ubuntu-latest
     permissions:
+      issues: write
       contents: write
-      pull-requests: write
+      pull-requests: read/write
+      discussions: write
+      checks: write
     steps:
       - uses: mshick/add-pr-comment@v1
         with:
